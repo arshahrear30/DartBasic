@@ -29,6 +29,8 @@ Windows er jonno : https://gekorm.com/dart-windows/
  MacOS : gekorm.com/dart-windows এই ওয়েবসাইট থেকে macOS এর ফাইল mac  এর terminal  এ Homebrew এর command গুলা লিখবেন। Environment  সেটআপ done .
   এইবার IntelliJ IDEA ইনস্টল করলে dart কাজ করবে properly 
 
+
+https://www.jetbrains.com/idea/
   IntelliJ IDEA open  করার পর welcome স্ক্রিন থেকে Plugins এ যাবেন।  dart.dev/get-dart এই খানে $ brew info dart টা কপি করবো cmd  তে  run করবো। দেখবো লোকেশন টা কোই : এই 
   path  টা  Dart sdk path এ বসাবো। তাইলে আমরা ভার্সন দেখতে পারবো , এর পর আমরা প্রজেক্ট বিল্ড করবো। . 
 
