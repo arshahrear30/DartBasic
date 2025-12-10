@@ -1,0 +1,28 @@
+void main() {
+  // List হলো একটি ordered collection যেখানে index অনুযায়ী মান থাকে
+  List<String> fruits = ["apple", "banana", "cherry"];
+
+  // Set হলো unordered collection, এবং এতে ডুপ্লিকেট ভ্যালু থাকে না
+  Set<String> fruitsset = {"apple", "banana", "cherry"};
+  
+  // List থেকে প্রতিটি আইটেম বের করে প্রিন্ট করা
+  for (var a in fruits) {
+    print(a); // List এর প্রতিটি ফল প্রিন্ট হবে
+  }
+  
+  // Set থেকে প্রতিটি আইটেম বের করে প্রিন্ট করা
+  for (var a in fruitsset) {
+    print(a); // Set এর প্রতিটি ফল প্রিন্ট হবে (order fixed না)
+  }
+  
+  // List of Map — প্রতিটি Map এ name এবং age আছে
+  List<Map<String, dynamic>> users = [
+    {"name": "Alice", "age": 25},
+    {"name": "ble", "age": 20},
+  ];
+      
+  // প্রতিটি user এর নাম ও বয়স প্রিন্ট করা
+  for (var a in users) {
+    print("Name: ${a["name"]}, Age: ${a["age"]}");
+  }
+}
