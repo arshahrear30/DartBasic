@@ -1,0 +1,22 @@
+class Car{ //class er modde ki ki object thakte pare ta define korbo .. 
+    String? brand;
+    String? model;
+    int? year;
+    
+    Car({required this.brand,required this.model,required this.year}); //jkon amra constructor hisabe required use korbo that mean ai value gula input deya must ta na hoilay system kaz korbe na. 
+    //this keyword dilay easyly valu assign kora jay . like akon dekho : brand: "Toyota", model:"Corola", year:2020  : kotho easyly kora jay .. 
+    
+    void displayInfo(){
+        print("car:$brand,$model,$year");
+        
+    }
+    
+}
+
+
+void main(){
+    Car mycar=Car(brand: "Toyota", model:"Corola", year:2020); 
+    print(mycar.brand);
+    mycar.displayInfo();
+    
+}
