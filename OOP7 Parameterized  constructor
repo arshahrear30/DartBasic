@@ -1,0 +1,46 @@
+//constructor 
+//special type of method  .. return type thakbe na .. method name and class name same thakbay .. 
+//function or method er samney amra void, int .... ei gula dei jay .. ei gula ke return type bole .. ei return type thakbe na 
+
+
+class Student{
+    
+    String? name;
+    int? roll;
+    double? salary;
+    
+   // Student(name,rool,salary){//Parameterized  constructor //ei babae korle o code ta sundor hoy na ....
+    
+    //}
+
+
+    Student(String x, int y, double z){//Parameterized  constructor //ei babae korle o code ta sundor hoy na ....
+      name=x;
+      roll=y;
+      salary=z;
+    
+    } // Student(this.name, this.roll, this.salary); ei line likleo hoibo eki kaz
+    
+    void display(){ //void er suvida hoccay o auto nije nije bujay nibay atar data type ki .. 
+        print(name);
+        print(roll);
+        print(salary);
+    }
+    
+
+    
+}
+
+
+
+void main(){
+    
+    Student ob=Student("Shahrear",33,20000000000);//data pass korteci that mean parameter constructor
+    ob.display();
+    
+    //ob.name="Shahrear"; ei babe call koraly code er sondorjo nosto hoye jay ...
+    //ob.roll=25;
+    //ob.salary=1.1;
+   
+    
+}
