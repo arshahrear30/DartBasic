@@ -1,0 +1,38 @@
+//Inheritance 
+//2 er odik class er moddey inheritance hoy .. 
+class Father{ // Main/parent class 
+    
+    String? name;
+    int? dob;
+    
+    void display(){
+        
+    }
+
+}
+
+    //class Student{
+    //String? name;
+    //int? dob; ei 2 ta line jathey bar bar liktay na hoy tai inheritance proyojon//tai inherit kortay extends use korbo ar por oi class er name .. 
+class Student extends Father {    //child class 
+    
+    int? roll;
+
+}
+
+
+
+void main(){
+    
+    Father ob0 = Father();
+    ob0.name = " Shahrear";
+    
+    Student ob1  = Student();//dekco ekon student dia amra Father class er data access kortay parci . karon extends Father dorci jey tai .. 
+    ob1.name="x";
+    ob1.dob=25;
+    ob1.display();
+    printf()
+    
+    
+   
+}
