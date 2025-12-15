@@ -1,0 +1,30 @@
+//Encapsulation
+//sensitive kono data niye jokon kaz korbo thokon Encapsulation use korbo..
+class Student{
+    String? _nid;// veriable er purbay underscore dilay oita private data hoiya jay Dart er ketray ....
+
+   // underscore (_) থাকার কারণে এটা class-এর বাইরে থেকে সরাসরি access করা যাবে না
+    set secratenid(String  secratenid){
+        _nid=secratenid;//inderictly assign hoilo ..
+    }
+    
+    
+    String get getName{//fetch //getter
+        return _nid?? "kicu nai"; //double question mean .. jodi null data thakey tailay ki print hoibo..
+    }
+    
+}
+
+void main(){
+    
+    Student ob = Student();
+    ob.secratenid="Hello";//eijay ei line ta lekhay data ar null hoibo na .. 
+    print(ob.getName);
+    
+}
+//_nid → private
+//setter → indirect set
+//getter → controlled access
+//?? → null safety
+
+
