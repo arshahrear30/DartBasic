@@ -13,7 +13,9 @@ class Father{ // Main/parent class
 class Student extends Father {    //child class 
     
     @override //override dilay same name er method 2 bar bebeohar kora jay ..ekon kintu over right korar karon e display name e notun akta method call hoicay .. shey kintu ager method er data gula paibo na .. she akon notun er moto 
-    void display(){}
+    void display(){
+        print("Shahrear");
+    }
 
 }
 
