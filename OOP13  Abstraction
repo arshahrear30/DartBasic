@@ -1,0 +1,56 @@
+//Abstraction
+// abstract class er moddey unimplemented and implemented  both data rakha jay ..etar moddey akta subida acay :doro same method er modde vivinno data pass korbo .. user vivinno .. 
+abstract class Message{ //parent class
+    void display();//unimplemented // ei method er body nai .
+    void display1();
+     void display2(){//implemented
+         
+     }
+}
+
+//example : doro Telegram er modde same mechanism ami amr akta bondu key hi dibo ..but amar bondu onno kicu likbay .. tokon abstraction use hoy .. method ek i kintu bibinno data pass hoy ..
+//ekta method er body thakbay na .. kintu eta je kew je kono vabey use korbay parrent class theke niye..
+
+//extends :  tokon e call korbo jodi implemented and unimplemented both type data thake parent class e .. 
+//implements : tokon e call korbo jodi only implemented data thake parent class e .
+
+class Person1 extends Message{ //child class 
+
+//child class joto bar i  nibo sob somoy parent class er sob method override er maddome sob gula call kortay hoibo ..
+    
+    @override
+    void display(){
+        
+    }
+    @override
+    void display1(){
+        
+    }
+    @override
+    void display2(){
+        
+    }
+    
+}
+
+class Person2 extends Message{//child class  
+    
+    @override
+    void display(){
+        
+    }
+    @override
+    void display1(){
+        
+    }
+    @override
+    void display2(){
+        
+    }
+    
+}
+
+// Abstraction মানে কী কাজ হবে সেটা define করা,
+// কিন্তু কাজটা কীভাবে হবে সেটা child class-এর উপর ছেড়ে দেওয়া
+//Abstraction মানে কী করতে হবে তা বলা,
+//কিন্তু কীভাবে করতে হবে তা লুকিয়ে রাখা।
