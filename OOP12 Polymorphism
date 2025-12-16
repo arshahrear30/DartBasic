@@ -1,0 +1,61 @@
+//Polymorphism :একই method নাম, কিন্তু আলাদা আলাদা behavior
+//Override jey sikci oita o ekta polymorphism 
+//Upcasting ekon sikbo
+//getName()এই method টা সব class-এই আছে, কিন্তু output আলাদা।
+class Father {
+    
+    void display(){
+        print("something");
+    }
+     //jehetu ata parent class tai override likar dorkar nai but child class gula tey override lekar proyojon acay .. 
+   String getName(){ 
+       return "Habibi"; //এইটা শুধু একটা লেখা, variable না
+       //String লেখার সময় quotation লাগবেই Variable হলে quotation লাগবে না
+   }
+    
+}
+
+class Student1 extends Father{
+   String name="child 1"; 
+   
+   @override
+   String getName(){
+       return name;// এখানে name হলো variable
+   }
+}
+
+class Student2 extends Father{
+    String name="child hey 2";
+     @override
+   String getName(){
+       return name;
+   }
+}
+
+class Student3 extends Father{//class গুলো একে অপরের উপর depend করে না
+    String name="child brother 3";
+     @override
+   String getName(){
+       return name;
+   }
+}
+
+
+void main(){
+    
+    Father ob=Student1();//reference object
+    print(ob.getName());
+    print(ob.getName());
+    
+    
+    ob = Student2();//dekcho eikhane Father ke abar call kortay hoy nai .. tai code storage managment valo hoy
+    print(ob.getName());
+    //Code change করলেও main code touch করতে হয় না
+    ob = Student3();//একই method call, কাজ আলাদা
+    print(ob.getName());
+    print(ob.getName());
+    print(ob.getName());
+    
+}
+//Parent reference দিয়ে child object ধরলে runtime-এ child clas-এর overridden method call হয়। এটাই Polymorphism।
+
