@@ -9,7 +9,7 @@ class Student{
 //ekon amra object diya ager class gular data access korbo..\
 void main(){
     
-    Student studentob1 = Student(); //studentob1  tai object
+    Student studentob1 = Student(); //studentob1  tai object //ClassName objectName=Constructor ;
     studentob1.name="x";
     studentob1.roll=55;
     
